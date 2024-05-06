@@ -4,7 +4,7 @@ on:
 jobs:
   OCR:
     runs-on: ubuntu-20.04
-    timeout-minutes: 129600 # 设置为 90 天（90 * 24 * 60 分钟）
+    timeout-minutes: 4320  # 设置为 3 天（3 * 24 * 60 分钟），这是 GitHub Actions 的最大限制
     steps:
       - uses: actions/checkout@v3
       - name: "移动一些文件"
